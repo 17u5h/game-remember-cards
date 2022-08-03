@@ -48,7 +48,7 @@
   font-size: 40px;
   line-height: 48px;
 }
-.start-screen__levels {
+.start-screen__difficulties {
   display: flex;
   gap: 24px;
   margin-bottom: 20px;
@@ -56,7 +56,7 @@
   line-height: 72px;
   font-weight: 600;
 }
-.start-screen__level {
+.start-screen__difficulty {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,12 +69,12 @@
   box-sizing: border-box;
   border: 1px solid #ececec;
 }
-.start-screen__level:hover {
+.start-screen__difficulty:hover {
   background-color: #ececec;
   border: 2px solid #fff;
   user-select: none;
 }
-.start-screen__level:active {
+.start-screen__difficulty:active {
   transform: scale(0.96);
 }
 
