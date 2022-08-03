@@ -6,7 +6,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.button{
+.button {
   width: 246px;
   height: 50px;
   font-size: 24px;
@@ -16,15 +16,17 @@
   border: none;
   border-radius: $borderRadius;
   transition: transform .2s;
-  &:hover{
+
+  &:hover {
     background-color: #68a803;
   }
-  &:active{
+
+  &:active {
     transform: scale(0.97);
   }
 }
 
-.start-screen{
+.start-screen {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -43,14 +45,16 @@
     border-radius: $borderRadius;
     box-shadow: 0 0 7px #fff;
   }
-  &__title{
+
+  &__title {
     color: $darkColor;
     text-align: center;
     width: 208px;
     font-size: 40px;
     line-height: 48px;
   }
-  &__levels{
+
+  &__levels {
     display: flex;
     gap: 24px;
     margin-bottom: 20px;
@@ -58,7 +62,8 @@
     line-height: 72px;
     font-weight: 600;
   }
-  &__level{
+
+  &__level {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,12 +75,14 @@
     transition: transform .2s;
     box-sizing: border-box;
     border: 1px solid #ececec;
-    &:hover{
+
+    &:hover {
       background-color: #ececec;
       border: 2px solid #fff;
       user-select: none;
     }
-    &:active{
+
+    &:active {
       transform: scale(0.96);
     }
   }
