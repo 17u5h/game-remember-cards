@@ -6,7 +6,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.button{
+body {
+  background-color: $darkColor;
+}
+
+.button {
   width: 246px;
   height: 50px;
   font-size: 24px;
@@ -16,15 +20,17 @@
   border: none;
   border-radius: $borderRadius;
   transition: transform .2s;
-  &:hover{
+
+  &:hover {
     background-color: #68a803;
   }
-  &:active{
+
+  &:active {
     transform: scale(0.97);
   }
 }
 
-.start-screen{
+.start-screen {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -43,14 +49,16 @@
     border-radius: $borderRadius;
     box-shadow: 0 0 7px #fff;
   }
-  &__title{
+
+  &__title {
     color: $darkColor;
     text-align: center;
     width: 208px;
     font-size: 40px;
     line-height: 48px;
   }
-  &__levels{
+
+  &__difficulties {
     display: flex;
     gap: 24px;
     margin-bottom: 20px;
@@ -58,7 +66,8 @@
     line-height: 72px;
     font-weight: 600;
   }
-  &__level{
+
+  &__difficulty {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,13 +79,83 @@
     transition: transform .2s;
     box-sizing: border-box;
     border: 1px solid #ececec;
-    &:hover{
+
+    &_chosen{
+      background-color: #ececec;
+      border: 2px solid #fff;
+    }
+
+    &:hover {
       background-color: #ececec;
       border: 2px solid #fff;
       user-select: none;
     }
-    &:active{
+
+    &:active {
       transform: scale(0.96);
     }
   }
 }
+
+.container {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1068px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+  max-width: 1024px;
+  padding: 40px 22px 46px 22px;
+
+  &__clock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__min-sec {
+    display: flex;
+    justify-content: flex-end;
+    gap: 76px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  &__timer {
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+.play-field {
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 26px;
+
+  &__card {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+
+    &_not-flipped {
+      background: #C2F5FF url("./src/img/backSideCard.svg") no-repeat center;
+    }
+
+    &_flipped {
+
+    }
+  }
+}
+

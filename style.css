@@ -4,6 +4,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-color: #004980;
+}
+
 .button {
   width: 246px;
   height: 50px;
@@ -48,7 +52,7 @@
   font-size: 40px;
   line-height: 48px;
 }
-.start-screen__levels {
+.start-screen__difficulties {
   display: flex;
   gap: 24px;
   margin-bottom: 20px;
@@ -56,7 +60,7 @@
   line-height: 72px;
   font-weight: 600;
 }
-.start-screen__level {
+.start-screen__difficulty {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,13 +73,70 @@
   box-sizing: border-box;
   border: 1px solid #ececec;
 }
-.start-screen__level:hover {
+.start-screen__difficulty_chosen {
+  background-color: #ececec;
+  border: 2px solid #fff;
+}
+.start-screen__difficulty:hover {
   background-color: #ececec;
   border: 2px solid #fff;
   user-select: none;
 }
-.start-screen__level:active {
+.start-screen__difficulty:active {
   transform: scale(0.96);
+}
+
+.container {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1068px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+  max-width: 1024px;
+  padding: 40px 22px 46px 22px;
+}
+.header__clock {
+  display: flex;
+  flex-direction: column;
+}
+.header__min-sec {
+  display: flex;
+  justify-content: flex-end;
+  gap: 76px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+.header__timer {
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.play-field {
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 26px;
+}
+.play-field__card {
+  width: 95px;
+  height: 133px;
+  background-size: cover;
+}
+.play-field__card_not-flipped {
+  background: #C2F5FF url("./src/img/backSideCard.svg") no-repeat center;
 }
 
 /*# sourceMappingURL=style.css.map */
