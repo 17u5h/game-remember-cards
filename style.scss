@@ -6,6 +6,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-color: $darkColor;
+}
+
 .button {
   width: 246px;
   height: 50px;
@@ -87,3 +91,66 @@
     }
   }
 }
+
+.container {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1068px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+  max-width: 1024px;
+  padding: 40px 22px 46px 22px;
+
+  &__clock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__min-sec {
+    display: flex;
+    justify-content: flex-end;
+    gap: 76px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  &__timer {
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+.play-field {
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 26px;
+
+  &__card {
+    width: 95px;
+    height: 133px;
+    background-size: cover;
+
+    &_not-flipped {
+      background: #C2F5FF url("./src/img/backSideCard.svg") no-repeat center;
+    }
+
+    &_flipped {
+
+    }
+  }
+}
+
