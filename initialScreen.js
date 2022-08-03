@@ -55,8 +55,10 @@ function renderStartScreen() {
 
 		target.classList.add('start-screen__difficulty_chosen')
 
-		difficulty = countCards[target.dataset.difficulty]
-
+		if (target.dataset.difficulty in countCards) {
+			difficulty = countCards[target.dataset.difficulty]
+			return
+		}
 		throw new Error('не найдена сложность игры')
 	}
 
