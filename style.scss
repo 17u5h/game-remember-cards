@@ -80,6 +80,11 @@ body {
     box-sizing: border-box;
     border: 1px solid #ececec;
 
+    &_chosen{
+      background-color: #ececec;
+      border: 2px solid #fff;
+    }
+
     &:hover {
       background-color: #ececec;
       border: 2px solid #fff;

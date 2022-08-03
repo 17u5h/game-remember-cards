@@ -50,21 +50,14 @@ function renderStartScreen() {
 		if (!target.classList.contains('start-screen__difficulty')) return
 
 		for (let i = 0; i < difficultyButtons.children.length; i++) {
-			difficultyButtons.children[i].style.backgroundColor = '#fff'
-			difficultyButtons.children[i].style.border = '1px solid #ececec'
+			difficultyButtons.children[i].classList.remove('start-screen__difficulty_chosen')
 		}
 
-		if (target.dataset.difficulty === 'easy') {
-			difficulty = numberOfCardsEasy
-		} else if (target.dataset.difficulty === 'normal') {
-			difficulty = numberOfCardsNormal
-		} else if (target.dataset.difficulty === 'hard') {
-			difficulty = numberOfCardsHard
-		} else {
-			throw new Error('не найдена сложность игры')
-		}
-		target.style.backgroundColor = '#ececec'
-		target.style.border = '2px solid #fff'
+		target.classList.add('start-screen__difficulty_chosen')
+
+		difficulty = countCards[target.dataset.difficulty]
+
+		throw new Error('не найдена сложность игры')
 	}
 
 	const difficultyButtons = document.querySelector('.start-screen__difficulties')

@@ -73,6 +73,10 @@ body {
   box-sizing: border-box;
   border: 1px solid #ececec;
 }
+.start-screen__difficulty_chosen {
+  background-color: #ececec;
+  border: 2px solid #fff;
+}
 .start-screen__difficulty:hover {
   background-color: #ececec;
   border: 2px solid #fff;
