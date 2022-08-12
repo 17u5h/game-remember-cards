@@ -9,7 +9,7 @@ const isProduction = process.env.NODE_ENV === "production"
 module.exports = {
 	entry: "./initialScreen.js",
 	output: {
-		path: path.resolve(_dirname, "dist"),
+		path: path.resolve(__dirname, "dist"),
 		filename: "bundle.js",
 		clean: true,
 	},
