@@ -13,7 +13,6 @@ const firstClickedCard = []
 let firstClickedCardElement
 let secondClickedCardElement
 
-
 function createDeck(difficulty) {
 	if (difficulty % 2 !== 0) {
 		throw new Error('нечетное количество карт, игра не получится')
