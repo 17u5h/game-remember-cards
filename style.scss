@@ -80,7 +80,7 @@ body {
     box-sizing: border-box;
     border: 1px solid #ececec;
 
-    &_chosen{
+    &_chosen {
       background-color: #ececec;
       border: 2px solid #fff;
     }
@@ -153,8 +153,148 @@ body {
       background: #C2F5FF url("./src/img/backSideCard.svg") no-repeat center;
     }
 
-    &_flipped {
+    &_flipped-1-6 {
+      background: #C2F5FF url("./src/img/6 пики.svg") no-repeat center;
+    }
 
+    &_flipped-1-7 {
+      background: #C2F5FF url("./src/img/7 пики.svg") no-repeat center;
+    }
+
+    &_flipped-1-8 {
+      background: #C2F5FF url("./src/img/8 пики.svg") no-repeat center;
+    }
+
+    &_flipped-1-9 {
+      background: #C2F5FF url("./src/img/9 пики.svg") no-repeat center;
+    }
+
+    &_flipped-1-10 {
+      background: #C2F5FF url("./src/img/10 пики.svg") no-repeat center;
+    }
+
+    &_flipped-1-11 {
+      background: #C2F5FF url("./src/img/валет пики.svg") no-repeat center;
+    }
+
+    &_flipped-1-12 {
+      background: #C2F5FF url("./src/img/дама пики.svg") no-repeat center;
+    }
+
+    &_flipped-1-13 {
+      background: #C2F5FF url("./src/img/король пики.svg") no-repeat center;
+    }
+
+    &_flipped-1-14 {
+      background: #C2F5FF url("./src/img/туз пики.svg") no-repeat center;
+    }
+
+    &_flipped-2-6 {
+      background: #C2F5FF url("./src/img/6 черви.svg") no-repeat center;
+    }
+
+    &_flipped-2-7 {
+      background: #C2F5FF url("./src/img/7 черви.svg") no-repeat center;
+    }
+
+    &_flipped-2-8 {
+      background: #C2F5FF url("./src/img/8 черви.svg") no-repeat center;
+    }
+
+    &_flipped-2-9 {
+      background: #C2F5FF url("./src/img/9 черви.svg") no-repeat center;
+    }
+
+    &_flipped-2-10 {
+      background: #C2F5FF url("./src/img/10 черви.svg") no-repeat center;
+    }
+
+    &_flipped-2-11 {
+      background: #C2F5FF url("./src/img/валет черви.svg") no-repeat center;
+    }
+
+    &_flipped-2-12 {
+      background: #C2F5FF url("./src/img/дама черви.svg") no-repeat center;
+    }
+
+    &_flipped-2-13 {
+      background: #C2F5FF url("./src/img/король черви.svg") no-repeat center;
+    }
+
+    &_flipped-2-14 {
+      background: #C2F5FF url("./src/img/туз черви.svg") no-repeat center;
+    }
+
+    &_flipped-3-6 {
+      background: #C2F5FF url("./src/img/6 бубны.svg") no-repeat center;
+    }
+
+    &_flipped-3-7 {
+      background: #C2F5FF url("./src/img/7 бубны.svg") no-repeat center;
+    }
+
+    &_flipped-3-8 {
+      background: #C2F5FF url("./src/img/8 бубны.svg") no-repeat center;
+    }
+
+    &_flipped-3-9 {
+      background: #C2F5FF url("./src/img/9 бубны.svg") no-repeat center;
+    }
+
+    &_flipped-3-10 {
+      background: #C2F5FF url("./src/img/10 бубны.svg") no-repeat center;
+    }
+
+    &_flipped-3-11 {
+      background: #C2F5FF url("./src/img/валет бубны.svg") no-repeat center;
+    }
+
+    &_flipped-3-12 {
+      background: #C2F5FF url("./src/img/дама бубны.svg") no-repeat center;
+    }
+
+    &_flipped-3-13 {
+      background: #C2F5FF url("./src/img/король бубны.svg") no-repeat center;
+    }
+
+    &_flipped-3-14 {
+      background: #C2F5FF url("./src/img/туз бубны.svg") no-repeat center;
+    }
+
+    &_flipped-4-6 {
+      background: #C2F5FF url("./src/img/6 крести.svg") no-repeat center;
+    }
+
+    &_flipped-4-7 {
+      background: #C2F5FF url("./src/img/7 крести.svg") no-repeat center;
+    }
+
+    &_flipped-4-8 {
+      background: #C2F5FF url("./src/img/8 крести.svg") no-repeat center;
+    }
+
+    &_flipped-4-9 {
+      background: #C2F5FF url("./src/img/9 крести.svg") no-repeat center;
+    }
+
+    &_flipped-4-10 {
+      background: #C2F5FF url("./src/img/10 крести.svg") no-repeat center;
+    }
+
+    &_flipped-4-11 {
+      background: #C2F5FF url("./src/img/валет крести.svg") no-repeat center;
+    }
+
+    &_flipped-4-12 {
+      background: #C2F5FF url("./src/img/дама крести.svg") no-repeat center;
+    }
+
+    &_flipped-4-13 {
+      background: #C2F5FF url("./src/img/король крести.svg") no-repeat center;
+    }
+
+    &_flipped-4-14 {
+      background: #C2F5FF url("./src/img/туз крести.svg") no-repeat center;
     }
   }
 }

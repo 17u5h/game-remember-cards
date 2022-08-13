@@ -2,12 +2,18 @@ function renderPlayScreen(event) {
 	event.preventDefault()
 	document.body.textContent = ''
 
-	const numberOfCards = []
+	const cards = []
+	deck = createDeck(difficulty)
 
 	for (let i = 0; i < difficulty; i++) {
-		numberOfCards.push({
+		const randomCard = shuffleDeckAndPushCard()
+		cards.push({
 			tag: 'img',
-			cls: ['play-field__card', 'play-field__card_not-flipped'],
+			cls: ['play-field__card', `play-field__card_flipped-${randomCard[0]}-${randomCard[1]}`],
+			attrs: {
+				'data-suit': randomCard[0],
+				'data-rank': randomCard[1]
+			}
 		})
 	}
 
@@ -49,10 +55,26 @@ function renderPlayScreen(event) {
 			}, {
 				tag: 'div',
 				cls: 'play-field',
-				content: numberOfCards
+				content: cards
 			}]
 	})
+
 	document.body.appendChild(templatePlayScreen)
 	const startAgainButton = document.querySelector('.button')
 	startAgainButton.addEventListener('click', renderStartScreen)
+
+	const hideCards = card => {
+		setTimeout(() => {
+
+			card.removeAttribute('class')
+			card.classList.add('play-field__card_not-flipped')
+			card.classList.add('play-field__card')
+		}, timeToHideCards)
+	}
+
+	const cardElements = document.querySelectorAll('.play-field__card')
+	cardElements.forEach(hideCards)
+
+	const clickedCard = document.querySelector('.play-field')
+	clickedCard.addEventListener('click', gameEngine)
 }
