@@ -48,16 +48,23 @@ function renderStartScreen() {
 	minutes = 0
 
 
-	function setDifficulty(event) {
-		const target = event.target
+	function setDifficulty(event: Event) {
+
+		const target = event.target as HTMLElement
+
+		if (target === null) throw new Error('не задана сложность игры')
 
 		if (!target.classList.contains('start-screen__difficulty')) return
+
+		if (difficultyButtons === null) throw new Error('кнопки выбора сложности не создались')
 
 		for (let i = 0; i < difficultyButtons.children.length; i++) {
 			difficultyButtons.children[i].classList.remove('start-screen__difficulty_chosen')
 		}
 
 		target.classList.add('start-screen__difficulty_chosen')
+
+		if (target.dataset.difficulty === undefined) throw new Error('что- то произошло с заданием сложности игры внутри HTML элемента')
 
 		if (target.dataset.difficulty in cardsCountByDifficulty) {
 			difficulty = cardsCountByDifficulty[target.dataset.difficulty]
@@ -68,6 +75,8 @@ function renderStartScreen() {
 
 	const difficultyButtons = document.querySelector('.start-screen__difficulties')
 	const startButton = document.querySelector('.button')
+
+	if (difficultyButtons === null || startButton === null) throw new Error('кнопки выбора сложности или кнопка старта не создались')
 	difficultyButtons.addEventListener('click', setDifficulty)
 	startButton.addEventListener('click', renderPlayScreen)
 }

@@ -2,11 +2,12 @@
   "name": "find-pair-of-cards",
   "version": "1.0.0",
   "description": "",
-  "main": "initialScreen.js",
+  "main": "initialScreen.ts",
   "scripts": {
     "test": "",
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "lint:ts": "tsc --noEmit"
   },
   "dependencies": {
     "copy-webpack-plugin": "11.0.0",

@@ -7,7 +7,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const isProduction = process.env.NODE_ENV === "production"
 
 module.exports = {
-	entry: "./initialScreen.js",
+	entry: "./initialScreen.ts",
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "bundle.js",

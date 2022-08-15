@@ -1,9 +1,11 @@
 function renderFinishScreen(){
 clearInterval(timerInterval)
-	const playedTime = document.querySelector('.header__timer').textContent
-	console.log(playedTime)
+	const playedTimeElement = document.querySelector('.header__timer')
+	if (playedTimeElement === null) throw new Error('что то произошло с таймером. там пусто')
+	const playedTime = playedTimeElement.textContent
 
-	const container = document.querySelector('.container')
+	const container = document.querySelector('.container') as HTMLElement
+	if (container === null) throw new Error('куда-то пропал .container')
 	container.style.opacity = '0.4'
 	container.style.userSelect = 'none'
 
@@ -42,5 +44,6 @@ clearInterval(timerInterval)
 	document.body.appendChild(templateFinishScreen)
 
 	const startAgainButton = document.querySelector('.finish-screen-button')
+	if (startAgainButton === null) throw new Error('не получилось поймать кнопку "Начать игру заново"')
 	startAgainButton.addEventListener('click', renderStartScreen)
 }

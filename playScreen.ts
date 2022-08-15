@@ -1,4 +1,4 @@
-function renderPlayScreen(event) {
+function renderPlayScreen(event: Event) {
 	event.preventDefault()
 	document.body.textContent = ''
 
@@ -61,15 +61,16 @@ function renderPlayScreen(event) {
 
 	document.body.appendChild(templatePlayScreen)
 	const startAgainButton = document.querySelector('.button')
+	if (startAgainButton === null) throw new Error('кнопка "начать заново" не создалась')
 	startAgainButton.addEventListener('click', renderStartScreen)
 
-	const hideCards = card => {
+	const hideCards = (card: Element) => {
 		setTimeout(() => {
 			card.removeAttribute('class')
 			card.classList.add('play-field__card_not-flipped')
 			card.classList.add('play-field__card')
 
-			const timerField = document.querySelector('.header__timer')
+			const timerField = document.querySelector('.header__timer') as HTMLElement
 			clearInterval(timerInterval)
 			startTimer(timerField)
 		}, timeToHideCards)
@@ -79,5 +80,6 @@ function renderPlayScreen(event) {
 	cardElements.forEach(hideCards)
 
 	const clickedCard = document.querySelector('.play-field')
+	if (clickedCard === null) throw new Error('не получается выбрать карту по которой кликнули')
 	clickedCard.addEventListener('click', gameEngine)
 }

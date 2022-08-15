@@ -5,9 +5,11 @@ function shuffleDeckAndPushCard() {
 	return randomCard
 }
 
-function gameEngine(event) {
+function gameEngine(event: Event) {
 
-	const target = event.target
+	const target = event.target as HTMLElement
+
+	if (target === null) throw new Error('нет игрового поля, по которому нужно кликать')
 	if (target.classList.contains('play-field')) return
 	const cards = document.querySelectorAll('.play-field__card')
 
@@ -21,8 +23,8 @@ function gameEngine(event) {
 		if (firstClickedCard[0] === secondSuit && firstClickedCard[1] === secondRank) {
 
 			firstClickedCard.splice(0)
-			firstClickedCardElement = undefined
-			secondClickedCardElement = undefined
+			firstClickedCardElement.remove()
+			secondClickedCardElement.remove()
 			countToWin += 2
 			if (countToWin === cards.length) renderFinishScreen()
 		} else {
@@ -38,6 +40,7 @@ function gameEngine(event) {
 		}
 		const firstSuit = target.dataset.suit
 		const firstRank = target.dataset.rank
+		if (firstSuit === undefined || firstRank === undefined) throw new Error('не получилось получить данные первой кликнутой карты')
 		firstClickedCard.push(firstSuit, firstRank)
 		target.classList.add(`play-field__card_flipped-${firstSuit}-${firstRank}`)
 		firstClickedCardElement = target
@@ -45,7 +48,7 @@ function gameEngine(event) {
 	}
 }
 
-function startTimer(timerField) {
+function startTimer(timerField: HTMLElement) {
 	timerInterval = setInterval(() => {
 		if (seconds <= 9) {
 			timerField.textContent = minutes.toString() + '.0' + seconds.toString()
