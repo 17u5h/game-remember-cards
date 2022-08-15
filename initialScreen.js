@@ -43,6 +43,10 @@ function renderStartScreen() {
 	)
 	document.body.textContent = ''
 	document.body.appendChild(templateInitialScreen)
+	countToWin = 0
+	seconds = 0
+	minutes = 0
+
 
 	function setDifficulty(event) {
 		const target = event.target

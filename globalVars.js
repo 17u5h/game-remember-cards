@@ -8,10 +8,15 @@ const suitCount = 4
 const equalCardsCount = 2
 const maxRank = 14
 const minRank = 6
-const timeToHideCards = 5000
+const timeToHideCards = 1000
 const firstClickedCard = []
 let firstClickedCardElement
 let secondClickedCardElement
+let seconds = 0
+let minutes = 0
+let timerInterval
+let countToWin = 0
+
 
 function createDeck(difficulty) {
 	if (difficulty % 2 !== 0) {

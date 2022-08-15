@@ -104,6 +104,7 @@ body {
   padding: 40px 22px 46px 22px;
 }
 .header__clock {
+  width: 200px;
   display: flex;
   flex-direction: column;
 }
@@ -120,6 +121,8 @@ body {
   line-height: 72px;
   font-weight: 600;
   color: #fff;
+  display: flex;
+  justify-content: end;
 }
 
 .play-field {
@@ -246,6 +249,48 @@ body {
 }
 .play-field__card_flipped-4-14 {
   background: #C2F5FF url("./src/img/туз крести.svg") no-repeat center;
+}
+
+.finish-screen {
+  position: absolute;
+  top: calc(50% - 360px);
+  left: calc(50% - 183px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.finish-screen__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  height: 460px;
+  padding: 0 70px;
+  background-color: #C2F5FF;
+  border-radius: 12px;
+  box-shadow: 0 0 7px #fff;
+}
+.finish-screen__logo {
+  width: 96px;
+  height: 96px;
+  background: url("./src/img/win-logo.svg") no-repeat center;
+}
+.finish-screen__sign {
+  font-size: 40px;
+  line-height: 48px;
+  color: #004980;
+}
+.finish-screen__time-sign {
+  font-size: 24px;
+  line-height: 32px;
+}
+.finish-screen__time-timer {
+  font-size: 64px;
+  line-height: 72px;
+  text-align: center;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

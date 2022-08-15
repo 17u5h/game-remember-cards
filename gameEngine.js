@@ -9,6 +9,7 @@ function gameEngine(event) {
 
 	const target = event.target
 	if (target.classList.contains('play-field')) return
+	const cards = document.querySelectorAll('.play-field__card')
 
 	if (firstClickedCard.length !== 0) {
 		const secondSuit = target.dataset.suit
@@ -16,13 +17,15 @@ function gameEngine(event) {
 
 		target.classList.add(`play-field__card_flipped-${secondSuit}-${secondRank}`)
 
+
 		if (firstClickedCard[0] === secondSuit && firstClickedCard[1] === secondRank) {
-			console.log('right')
+
 			firstClickedCard.splice(0)
 			firstClickedCardElement = undefined
 			secondClickedCardElement = undefined
+			countToWin += 2
+			if (countToWin === cards.length) renderFinishScreen()
 		} else {
-			console.log('wrong')
 			firstClickedCard.splice(0)
 			secondClickedCardElement = target
 		}
@@ -38,6 +41,25 @@ function gameEngine(event) {
 		firstClickedCard.push(firstSuit, firstRank)
 		target.classList.add(`play-field__card_flipped-${firstSuit}-${firstRank}`)
 		firstClickedCardElement = target
+
 	}
 }
 
+function startTimer(timerField) {
+	timerInterval = setInterval(() => {
+		if (seconds <= 9) {
+			timerField.textContent = minutes.toString() + '.0' + seconds.toString()
+			seconds++
+		}
+		if (seconds > 9){
+			timerField.textContent = minutes.toString() + '.' + seconds.toString()
+			seconds++
+		}
+		if (seconds > 59){
+			timerField.textContent = minutes.toString() + '.' + seconds.toString()
+			minutes++
+			seconds = 0
+		}
+	},1000)
+
+}

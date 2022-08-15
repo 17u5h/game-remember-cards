@@ -45,7 +45,7 @@ function renderPlayScreen(event) {
 							}, {
 								tag: 'div',
 								cls: 'header__timer',
-								content: `00.00` //${timer}
+								content: `0.00`
 							}]
 					}, {
 						tag: 'button',
@@ -65,10 +65,13 @@ function renderPlayScreen(event) {
 
 	const hideCards = card => {
 		setTimeout(() => {
-
 			card.removeAttribute('class')
 			card.classList.add('play-field__card_not-flipped')
 			card.classList.add('play-field__card')
+
+			const timerField = document.querySelector('.header__timer')
+			clearInterval(timerInterval)
+			startTimer(timerField)
 		}, timeToHideCards)
 	}
 
