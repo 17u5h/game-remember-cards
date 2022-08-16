@@ -50,18 +50,18 @@ function gameEngine(event: Event) {
 
 function startTimer(timerField: HTMLElement) {
     timerInterval = setInterval(() => {
-        if (seconds <= 9) {
-            timerField.textContent = minutes.toString() + '.0' + seconds.toString()
-            seconds++
-        }
-        if (seconds > 9) {
-            timerField.textContent = minutes.toString() + '.' + seconds.toString()
-            seconds++
-        }
-        if (seconds > 59) {
-            timerField.textContent = minutes.toString() + '.' + seconds.toString()
+        if (seconds > 59){
             minutes++
             seconds = 0
+            timerField.textContent = minutes.toString() + '.' + seconds.toString()
+        }
+        if (seconds >= 10){
+            timerField.textContent = minutes.toString() + '.' + seconds.toString()
+            seconds++
+        }
+        if (seconds < 10) {
+            timerField.textContent = minutes.toString() + '.0' + seconds.toString()
+            seconds++
         }
     }, 1000)
 
