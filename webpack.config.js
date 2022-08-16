@@ -21,9 +21,9 @@ module.exports = {
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				type: 'asset/resource'
-			},{
-			test: /\.(woff|woff2|eot|ttf|otf)$/i,
-			type: 'asset/resource'
+			}, {
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				type: 'asset/resource'
 			}]
 	},
 	plugins: [
@@ -31,9 +31,9 @@ module.exports = {
 			patterns: [{from: "static", to: "static"}]
 		}),
 		new HtmlWebpackPlugin({
-		template: "./index.html",
-	}),
-	new MiniCssExtractPlugin()
+			template: "./index.html",
+		}),
+		new MiniCssExtractPlugin()
 	],
 	optimization: {
 		minimizer: ["...", new CssMinimizerPlugin()],

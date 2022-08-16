@@ -94,6 +94,10 @@ body {
   flex-direction: column;
   max-width: 1068px;
 }
+.container_blur {
+  opacity: 0.4;
+  user-select: none;
+}
 
 .header {
   display: flex;
