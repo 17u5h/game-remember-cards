@@ -8,10 +8,11 @@ function shuffleDeckAndPushCard() {
 function gameEngine(event: Event) {
 
     const target = event.target as HTMLElement
+    const cards = document.querySelectorAll('.play-field__card')
 
     if (target === null) throw new Error('нет игрового поля, по которому нужно кликать')
     if (target.classList.contains('play-field')) return
-    const cards = document.querySelectorAll('.play-field__card')
+    if (target.classList.contains('guessed')) return
 
     if (firstClickedCard.length !== 0) {
         const secondSuit = target.dataset.suit
@@ -21,6 +22,10 @@ function gameEngine(event: Event) {
 
 
         if (firstClickedCard[0] === secondSuit && firstClickedCard[1] === secondRank) {
+            if (secondClickedCardElement === null) throw new Error('не удалось взять повторно уже открытую карту')
+            secondClickedCardElement = document.querySelector(`.play-field__card_flipped-${firstClickedCardElement.dataset.suit}-${firstClickedCardElement.dataset.rank}`) as HTMLElement
+            firstClickedCardElement.classList.add('guessed')
+            secondClickedCardElement.classList.add('guessed')
 
             firstClickedCard.splice(0)
             firstClickedCardElement.remove()
