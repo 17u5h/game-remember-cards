@@ -7,7 +7,7 @@
 
 проект запускается: npm run start
 
-сборка проекта вебпаком: npm run build
+сборка проекта вебпаком: npm run build. переменная окружения NODE_ENV стоит в позиции development
 
 форматирование проекта prettier'ом: npm run format
 
