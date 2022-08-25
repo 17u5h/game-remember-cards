@@ -9,6 +9,7 @@ describe('output data of createDeck', () => {
 
     expect(deck).toHaveLength(4)
   })
+
   it('should match arrays in array', function () {
     const length = 2
     const expected = [
@@ -22,5 +23,15 @@ describe('output data of createDeck', () => {
     const deck = createDeck(length)
 
     expect(deck).toEqual(expected)
+  })
+
+  it('should throw error when difficulty is odd', function () {
+    const difficulty = 3
+
+    const expected = () => {
+      createDeck(difficulty)
+    }
+
+    expect(expected).toThrowError('нечетное количество')
   })
 })
