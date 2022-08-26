@@ -32,6 +32,8 @@ describe('output data of createDeck', () => {
       createDeck(difficulty)
     }
 
-    expect(expected).toThrowError('нечетное количество')
+    expect(expected).toThrowError(
+      new Error('нечетное количество карт, игра не получится')
+    )
   })
 })
