@@ -20,7 +20,9 @@ const minRank = 6
 
 export function createDeck(difficulty: number) {
   if (difficulty % 2 !== 0) {
-    throw new Error('нечетное количество карт, игра не получится')
+    throw new Error(
+      'Сгенерированно нечетное количество карт. Невозможно начать игру'
+    )
   }
 
   const deck: string[][] = []

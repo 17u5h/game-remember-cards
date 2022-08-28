@@ -33,7 +33,9 @@ describe('output data of createDeck', () => {
     }
 
     expect(expected).toThrowError(
-      new Error('нечетное количество карт, игра не получится')
+      new Error(
+        'Сгенерированно нечетное количество карт. Невозможно начать игру'
+      )
     )
   })
 })
