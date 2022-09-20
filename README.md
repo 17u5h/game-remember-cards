@@ -17,3 +17,8 @@
 запуск линтеров: npm run lint
 
 к проекту прикручен husky, не дающий сделать commit, пока не прошла проверка линтеров
+
+
+![image](https://user-images.githubusercontent.com/102058870/191333048-dd2d0787-9a08-4fe5-8152-530332a5b65d.png)
+
+![image](https://user-images.githubusercontent.com/102058870/191333122-f1e4e3d3-796a-4068-9e31-5bb5bcdc6491.png)
