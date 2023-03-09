@@ -3,7 +3,7 @@ import renderStartScreen from './renderStartScreen'
 import { gameEngine, startTimer, timerInterval } from './gameEngine'
 import { createDeck, deckProps } from './initSetAndSupport'
 
-export default function renderPlayScreen(event: Event) {
+export default function renderPlayScreen(event: Event): void {
   event.preventDefault()
   document.body.textContent = ''
 
@@ -89,7 +89,7 @@ export default function renderPlayScreen(event: Event) {
   startAgainButton.addEventListener('click', renderStartScreen)
 
   const hideCards = (card: Element) => {
-    const timeToHideCards = 5000
+    const timeToHideCards = 2000
     setTimeout(() => {
       card.removeAttribute('class')
       card.classList.add('play-field__card_not-flipped')

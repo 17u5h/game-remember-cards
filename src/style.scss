@@ -154,155 +154,156 @@ body {
 
   &__card {
     width: 95px;
-    height: 133px;
+    height: 142px;
     background-size: cover;
+    border-radius: 14px;
 
     &_not-flipped {
-      background: #c2f5ff url('../static/img/backSideCard.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/not-flipped.png') no-repeat center;
     }
 
     &_flipped-1-6 {
-      background: #c2f5ff url('../static/img/6 пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/6-spades.png') no-repeat center;
     }
 
     &_flipped-1-7 {
-      background: #c2f5ff url('../static/img/7 пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/7-spades.png') no-repeat center;
     }
 
     &_flipped-1-8 {
-      background: #c2f5ff url('../static/img/8 пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/8-spades.png') no-repeat center;
     }
 
     &_flipped-1-9 {
-      background: #c2f5ff url('../static/img/9 пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/9-spades.png') no-repeat center;
     }
 
     &_flipped-1-10 {
-      background: #c2f5ff url('../static/img/10 пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/10-spades.png') no-repeat center;
     }
 
     &_flipped-1-11 {
-      background: #c2f5ff url('../static/img/валет пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/jack-spades.png') no-repeat center;
     }
 
     &_flipped-1-12 {
-      background: #c2f5ff url('../static/img/дама пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/queen-spades.png') no-repeat center;
     }
 
     &_flipped-1-13 {
-      background: #c2f5ff url('../static/img/король пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/king-spades.png') no-repeat center;
     }
 
     &_flipped-1-14 {
-      background: #c2f5ff url('../static/img/туз пики.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/ace-spades.png') no-repeat center;
     }
 
     &_flipped-2-6 {
-      background: #c2f5ff url('../static/img/6 черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/6-hearts.png') no-repeat center;
     }
 
     &_flipped-2-7 {
-      background: #c2f5ff url('../static/img/7 черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/7-hearts.png') no-repeat center;
     }
 
     &_flipped-2-8 {
-      background: #c2f5ff url('../static/img/8 черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/8-hearts.png') no-repeat center;
     }
 
     &_flipped-2-9 {
-      background: #c2f5ff url('../static/img/9 черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/9-hearts.png') no-repeat center;
     }
 
     &_flipped-2-10 {
-      background: #c2f5ff url('../static/img/10 черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/10-hearts.png') no-repeat center;
     }
 
     &_flipped-2-11 {
-      background: #c2f5ff url('../static/img/валет черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/jack-hearts.png') no-repeat center;
     }
 
     &_flipped-2-12 {
-      background: #c2f5ff url('../static/img/дама черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/queen-hearts.png') no-repeat center;
     }
 
     &_flipped-2-13 {
-      background: #c2f5ff url('../static/img/король черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/king-hearts.png') no-repeat center;
     }
 
     &_flipped-2-14 {
-      background: #c2f5ff url('../static/img/туз черви.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/ace-hearts.png') no-repeat center;
     }
 
     &_flipped-3-6 {
-      background: #c2f5ff url('../static/img/6 бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/6-diamonds.png') no-repeat center;
     }
 
     &_flipped-3-7 {
-      background: #c2f5ff url('../static/img/7 бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/7-diamonds.png') no-repeat center;
     }
 
     &_flipped-3-8 {
-      background: #c2f5ff url('../static/img/8 бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/8-diamonds.png') no-repeat center;
     }
 
     &_flipped-3-9 {
-      background: #c2f5ff url('../static/img/9 бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/9-diamonds.png') no-repeat center;
     }
 
     &_flipped-3-10 {
-      background: #c2f5ff url('../static/img/10 бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/10-diamonds.png') no-repeat center;
     }
 
     &_flipped-3-11 {
-      background: #c2f5ff url('../static/img/валет бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/jack-diamonds.png') no-repeat center;
     }
 
     &_flipped-3-12 {
-      background: #c2f5ff url('../static/img/дама бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/queen-diamonds.png') no-repeat center;
     }
 
     &_flipped-3-13 {
-      background: #c2f5ff url('../static/img/король бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/king-diamonds.png') no-repeat center;
     }
 
     &_flipped-3-14 {
-      background: #c2f5ff url('../static/img/туз бубны.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/ace-diamonds.png') no-repeat center;
     }
 
     &_flipped-4-6 {
-      background: #c2f5ff url('../static/img/6 крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/6-clubs.png') no-repeat center;
     }
 
     &_flipped-4-7 {
-      background: #c2f5ff url('../static/img/7 крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/7-clubs.png') no-repeat center;
     }
 
     &_flipped-4-8 {
-      background: #c2f5ff url('../static/img/8 крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/8-clubs.png') no-repeat center;
     }
 
     &_flipped-4-9 {
-      background: #c2f5ff url('../static/img/9 крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/9-clubs.png') no-repeat center;
     }
 
     &_flipped-4-10 {
-      background: #c2f5ff url('../static/img/10 крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/10-clubs.png') no-repeat center;
     }
 
     &_flipped-4-11 {
-      background: #c2f5ff url('../static/img/валет крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/jack-clubs.png') no-repeat center;
     }
 
     &_flipped-4-12 {
-      background: #c2f5ff url('../static/img/дама крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/queen-clubs.png') no-repeat center;
     }
 
     &_flipped-4-13 {
-      background: #c2f5ff url('../static/img/король крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/king-clubs.png') no-repeat center;
     }
 
     &_flipped-4-14 {
-      background: #c2f5ff url('../static/img/туз крести.svg') no-repeat center;
+      background: #c2f5ff url('../static/img/ace-clubs.png') no-repeat center;
     }
   }
 }
