@@ -86,7 +86,10 @@ export default function renderPlayScreen(event: Event): void {
   const startAgainButton = document.querySelector('.button')
   if (startAgainButton === null)
     throw new Error('кнопка "начать заново" не создалась')
-  startAgainButton.addEventListener('click', renderStartScreen)
+  startAgainButton.addEventListener('click', () => {
+    location.reload()
+    renderStartScreen()
+  })
 
   const hideCards = (card: Element) => {
     const timeToHideCards = 2000

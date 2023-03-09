@@ -58,5 +58,8 @@ export default function renderFinishScreen() {
   const startAgainButton = document.querySelector('.finish-screen-button')
   if (startAgainButton === null)
     throw new Error('не получилось поймать кнопку "Начать игру заново"')
-  startAgainButton.addEventListener('click', renderStartScreen)
+  startAgainButton.addEventListener('click', () => {
+    location.reload()
+    renderStartScreen()
+  })
 }
