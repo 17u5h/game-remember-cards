@@ -1,7 +1,8 @@
 const { it, describe, expect } = require('@jest/globals')
 const { createDeck } = require('./src/initSetAndSupport')
+// const { shuffleDeckAndPushCard } = require('./src/renderPlayScreen')
 
-describe('output data of createDeck', () => {
+describe('output data of createDeck function from initAndSupport.ts', () => {
   it('should have set length', function () {
     const length = 4
 
@@ -39,3 +40,16 @@ describe('output data of createDeck', () => {
     )
   })
 })
+
+// describe('output data of shuffleDeckAndPushCard function from renderPlayScreen.ts', () => {
+//   it('should match array', function () {
+//     const expected = [2, 10]
+//     const mockMath = Object.create(global.Math)
+//     mockMath.random = () => 0.5
+//     global.Math = mockMath
+//
+//     const array = shuffleDeckAndPushCard()
+//
+//     expect(array).toEqual(expected)
+//   })
+// })

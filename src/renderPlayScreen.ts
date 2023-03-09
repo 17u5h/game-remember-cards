@@ -3,7 +3,7 @@ import renderStartScreen from './renderStartScreen'
 import { gameEngine, startTimer, timerInterval } from './gameEngine'
 import { createDeck, deckProps } from './initSetAndSupport'
 
-export default function renderPlayScreen(event: Event) {
+export default function renderPlayScreen(event: Event): void {
   event.preventDefault()
   document.body.textContent = ''
 
