@@ -23,6 +23,6 @@
 
 Если игрок угадал пару карт, то они остаются открытыми. Если игрок допустил ошибку, то предыдущая пара карт скроется, и можно пробовать снова. Игра заканчивается после того как игрок угадал все пары карт. В конце игры показывается время, за которое игрок нашел пары всех карт.
 
-![image](https://user-images.githubusercontent.com/102058870/191333048-dd2d0787-9a08-4fe5-8152-530332a5b65d.png)
+![image](https://user-images.githubusercontent.com/102058870/232539146-11e4ba1a-84dd-4d72-b280-c3480706602c.png)
 
-![image](https://user-images.githubusercontent.com/102058870/191333122-f1e4e3d3-796a-4068-9e31-5bb5bcdc6491.png)
+![image](https://user-images.githubusercontent.com/102058870/232539394-5d50c7ad-49b6-4906-9d9f-68b602fa219f.png)
