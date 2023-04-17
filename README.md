@@ -3,7 +3,7 @@
 
 Написан на чистом TypeScript без фремйворков.
 
-Сборка проекта - npm run build (переменная окружения webpack'a, NODE_ENV стоит в позиции development).
+Сборка проекта - npm run build (переменная окружения webpack'a, NODE_ENV стоит в позиции development, source-map в позиции hidden).
 
 Запуск - npm run start
 
